@@ -1,0 +1,17 @@
+{
+  "name": "web",
+  "description": "Web server role.",
+  "default_attributes": {
+    "chef_client": {
+      "interval": 300,
+      "splay": 60
+    }
+  },
+  "run_list": [
+    "recipe[chef-client::default]",
+    "recipe[alex_users]",
+    "recipe[users]",
+    "recipe[chef-client::delete_validation]",
+    "recipe[learn_chef_apache2::default]"
+  ]
+}
