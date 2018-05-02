@@ -1,6 +1,7 @@
 DEPENDENCIES
   chef-client
   nginx
+  ossec
   sudo
   users (~> 5.3.1)
 
@@ -24,6 +25,8 @@ GRAPH
     yum-epel (>= 0.0.0)
     zypper (>= 0.0.0)
   ohai (5.2.0)
+  ossec (1.0.5)
+    build-essential (>= 0.0.0)
   seven_zip (2.0.2)
     windows (>= 1.2.2)
   sudo (4.0.0)
