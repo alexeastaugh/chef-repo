@@ -1,0 +1,7 @@
+DEPENDENCIES
+  alex_nginx_site
+    path: .
+    metadata: true
+
+GRAPH
+  alex_nginx_site (0.1.0)
